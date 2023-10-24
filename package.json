@@ -1,4 +1,5 @@
 {
+  "name": "studio-demo",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +9,12 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.1.54",
     "@nuxt/content": "^2.8.5",
+    "@nuxt/ui-pro": "^0.3.1",
+    "@nuxthq/studio": "^1.0.2",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "eslint": "^8.52.0",
     "nuxt": "^3.8.0"
   }
 }
