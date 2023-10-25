@@ -1,13 +1,13 @@
 export default defineAppConfig({
   header: {
-    title: 'Demo Studio',
-    icon: ''
+    title: 'Demo Studio Live',
+    icon: 'ph:coffee-bold'
   },
   footer: {
     display: true
   },
   socials: {
-    github: '',
-    twitter: ''
+    github: '_larbish',
+    twitter: 'larbish'
   }
 })
