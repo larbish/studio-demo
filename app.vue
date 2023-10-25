@@ -2,8 +2,9 @@
   <div>
     <UHeader>
       <template #logo>
-        <span>
-          Demo Studio
+        <Icon v-if="header.icon" :name="header.icon" class="h-10 w-10" />
+        <span v-else>
+          {{ header.title }}
         </span>
       </template>
       <template #right>
@@ -13,20 +14,24 @@
     <UMain class="min-h-[calc(100vh-var(--header-height)-120px)]">
       <NuxtPage />
     </UMain>
-    <UFooter>
+    <UFooter
+      v-if="footer.display"
+    >
       <template #right>
         <div class="flex items-center justify-center gap-4">
           <UButton
+            v-if="socials.github"
             icon="i-mdi-github"
-            :to="`https://github.com/larbish`"
+            :to="`https://github.com/${socials.github}`"
             color="gray"
             variant="ghost"
             target="_blank"
             :padded="false"
           />
           <UButton
+            v-if="socials.twitter"
             icon="i-mdi-twitter"
-            :to="`https://twitter.com/_larbish`"
+            :to="`https://twitter.com/${socials.twitter}`"
             color="gray"
             variant="ghost"
             target="_blank"
@@ -37,3 +42,7 @@
     </UFooter>
   </div>
 </template>
+
+<script setup lang="ts">
+const { header, footer, socials } = useAppConfig()
+</script>
