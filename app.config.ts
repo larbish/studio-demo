@@ -4,7 +4,7 @@ export default defineAppConfig({
     icon: 'ph:coffee-bold'
   },
   footer: {
-    display: true
+    display: false
   },
   socials: {
     github: '_larbish',
