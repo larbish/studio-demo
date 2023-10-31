@@ -1,7 +1,7 @@
 export default defineAppConfig({
   header: {
     title: 'Demo Studio Live',
-    icon: 'ph:coffee-bold'
+    icon: 'material-symbols:rocket-launch'
   },
   footer: {
     display: false
